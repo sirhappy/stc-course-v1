@@ -1,0 +1,77 @@
+{
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  "iconify.inplace": false,
+  "less.lint.unknownAtRules": "ignore",
+  "files.encoding": "utf8",
+  // format on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "cSpell.words": ["Abci", "antfu", "CELESTIA", "namada", "VITE", "XPRT"],
+  // "typescript.tsdk": "./node_modules/typescript/lib",
+  "vue.server.maxOldSpaceSize": 4096,
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "vue.inlayHints.missingProps": true,
+  "vue.autoInsert.dotValue": true,
+  "explorer.copyRelativePathSeparator": "/",
+  "workbench.colorCustomizations": {
+    "minimap.infoHighlight": "#00000000"
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/*.log": true,
+    "**/*.log*": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/elehukouben": true,
+    "**/.git": true,
+    "**/.gitignore": true,
+    "**/.svn": true,
+    "**/.DS_Store": true,
+    "**/.idea": true,
+    "**/.vscode": false,
+    "**/yarn.lock": true,
+    "**/tmp": true,
+    "out": true,
+    "dist": true,
+    "node_modules": true,
+    "CHANGELOG.md": true,
+    "examples": true,
+    "res": true,
+    "screenshots": true,
+    "yarn-error.log": true,
+    "**/.yarn": true
+  },
+  "files.exclude": {
+    "**/.cache": true,
+    "**/.editorconfig": true,
+    "**/.eslintcache": true,
+    "**/bower_components": true,
+    "**/.idea": true,
+    "**/tmp": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.vscode/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/bower_components/**": true,
+    "**/dist/**": true,
+    "**/yarn.lock": true
+  },
+  // "eslint.useFlatConfig": true,
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "less", "postcss", "scss", "vue", "sass"],
+  "path-intellisense.mappings": {
+    "@/": "${workspaceRoot}/src"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "extends": ["@tsconfig/node20/tsconfig.json", "@vue/tsconfig/tsconfig.dom.json"],
+  "exclude": ["**/dist/**", "uno.config.ts"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "electron",
+    "vite.config.ts"
+  ],
+  "files": ["auto/components.d.ts", "auto/auto-imports.d.ts"],
+  "compilerOptions": {
+    "lib": ["ES6", "DOM"],
+    "composite": false,
+    "skipLibCheck": false,
+    "jsx": "preserve",
+    "module": "ESNext",
+    "types": ["node", "webpack-env", "vite/client", "chrome"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}

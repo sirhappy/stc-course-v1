@@ -1,0 +1,102 @@
+{
+  "extends": ["@antfu", "@unocss", "plugin:vue/vue3-recommended"],
+  "plugins": ["@stylistic/js"],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser"
+  },
+  "rules": {
+    // Common
+    "semi": [2, "always"],
+    "no-console": "error",
+    "object-curly-spacing": ["error", "always"],
+    "key-spacing": [
+      "error",
+      {
+        "beforeColon": false
+      }
+    ],
+    "@typescript-eslint/semi": ["off"],
+    "no-multiple-empty-lines": "error",
+    "newline-before-return": "error",
+    "no-trailing-spaces": [
+      "error",
+      {
+        "skipBlankLines": true,
+        "ignoreComments": true
+      }
+    ],
+    "prefer-const": "warn",
+    "unused-imports/no-unused-imports": "warn",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    // Vue rules
+    "vue/multi-word-component-names": "off",
+    "vue/prop-name-casing": ["error", "camelCase"],
+    "vue/attribute-hyphenation": [
+      "error",
+      "never",
+      {
+        "ignore": []
+      }
+    ],
+    "vue/max-attributes-per-line": [
+      "error",
+      {
+        "singleline": {
+          "max": 2
+        },
+        "multiline": {
+          "max": 1
+        }
+      }
+    ],
+    "vue/v-on-event-hyphenation": [
+      "error",
+      "never",
+      {
+        "autofix": true,
+        "ignore": []
+      }
+    ],
+    "vue/no-unused-vars": [
+      "error",
+      {
+        "ignorePattern": "^_"
+      }
+    ],
+    "vue/component-name-in-template-casing": [
+      "error",
+      "PascalCase",
+      {
+        "registeredComponentsOnly": false
+      }
+    ],
+    "vue/block-order": [
+      "error",
+      {
+        "order": ["template", "script", "style"]
+      }
+    ],
+    // Override plugins
+    "antfu/top-level-function": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/member-delimiter-style": "error",
+    "@typescript-eslint/no-unused-vars": "off",
+    // TypeScript
+    "@stylistic/ts/member-delimiter-style": "off",
+    "@stylistic/ts/brace-style": [
+      "error",
+      "1tbs"
+    ],
+    "@stylistic/js/arrow-parens": ["error", "as-needed"],
+    "arrow-parens": "off"
+  }
+}
